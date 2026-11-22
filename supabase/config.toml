@@ -1,0 +1,5 @@
+project_id = "web-ban-nuoc"
+
+[db.seed]
+enabled = true
+sql_paths = ["./seed.sql"]
