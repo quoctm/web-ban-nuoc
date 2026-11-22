@@ -1,6 +1,6 @@
 import { z } from "zod";
 
-export const PAGE_SIZE = 8;
+export const PAGE_SIZE = 12;
 export const slugSchema = z.string().max(100).regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/);
 const searchSchema = z.string().trim().max(80).catch("");
 const pageSchema = z.string().regex(/^[0-9]+$/).transform(Number)
